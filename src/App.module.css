@@ -1,0 +1,15 @@
+.appShell {
+    min-height: 100vh;
+    background: var(--paper);
+
+    .pageContent {
+        width: min(1180px, calc(100% - 48px));
+        margin: 0 auto;
+        padding: 122px 0 72px;
+
+        @media (max-width: 600px) {
+            width: min(100% - 32px, 520px);
+            padding-top: 104px;
+        }
+    }
+}

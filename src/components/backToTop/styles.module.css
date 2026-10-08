@@ -1,0 +1,31 @@
+.backToTop {
+    position: fixed;
+    z-index: 15;
+    right: max(22px, calc((100vw - 1180px) / 2));
+    bottom: 22px;
+    display: grid;
+    width: 52px;
+    height: 56px;
+    place-items: center;
+    border: 1px solid #769380;
+    border-radius: 16px;
+    color: white;
+    background: var(--green);
+    box-shadow: 0 5px 18px rgb(36 49 42 / 16%);
+    font-size: 13px;
+    font-weight: 700;
+
+    svg {
+        font-size: 16px;
+    }
+
+    &:hover {
+        border-color: #b8c9bd;
+        box-shadow: 0 7px 22px rgb(36 49 42 / 22%);
+    }
+
+    @media (max-width: 600px) {
+        right: 14px;
+        bottom: 14px;
+    }
+}
